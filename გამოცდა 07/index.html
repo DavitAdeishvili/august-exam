@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+</head>
+<body>
+    <h1>Social Network</h1>
+
+    <div id="UserNameSec" class="div1">
+        <input type="text" id="userName" placeholder="Enter your name">
+        <br><br>
+        <button onclick="saveUserName()">Continue</button>
+    </div>
+
+    <div id="appSec" class="hidden" class="div2">
+        <h2>Welcome, <span id="userDisplay"></span></h2>
+        <h3>Create Post</h3>
+        <input type="text" id="titleInput" placeholder="Title">
+        <br><br>
+        <input type="text" id="post" placeholder="write something">
+        <br><br>
+        <select id="typeSelect">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+        </select>
+        <br><br>
+        <button onclick="addPost()">Post</button>
+
+        <h3>Your Posts</h3>
+        <div id="yourPosts"></div>
+
+        <h3>Public Posts</h3>
+        <div id="publicPosts"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
